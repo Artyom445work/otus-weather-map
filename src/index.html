@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Прогноз погоды</title>
+  </head>
+  <body>
+    <h1>Прогноз погоды</h1>
+    <div class="content">
+      <div class="content-weather-box">
+        <h3 class="content-weather-box__title"></h3>
+        <img class="content-weather-box__image" alt="WeatherIcon" />
+        <p class="content-weather-box__temp"></p>
+        <p class="content-weather-box__desc"></p>
+      </div>
+      <div class="content-map-box">
+        <img class="content-map-box__img" alt="Maps Static API" />
+      </div>
+    </div>
+    <div class="interaction">
+      <input
+        class="interaction__input"
+        type="text"
+        placeholder="Введите название города"
+      />
+      <button class="interaction__button">Нажмите</button>
+      <ol class="interaction__list"></ol>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
