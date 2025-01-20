@@ -27,19 +27,10 @@ module.exports = {
         //     directory: path.join(__dirname, './dist'),
         // },
     },
-    module: {
-        rules: [
-            {
-                test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
-            },
-        ],
-    },
     plugins: [
         // ...
         // применять изменения только при горячей перезагрузке
         new webpack.HotModuleReplacementPlugin(),
-        //new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             /*title: "Прогноз погоды",
                   meta: {
