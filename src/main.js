@@ -34,7 +34,7 @@ function showWeather(data) {
 
 async function addCity() {
   const list = document.querySelector(".interaction__list");
-  console.log('list === ', list)
+  console.log("list === ", list);
   const input = document.querySelector(".interaction__input");
   const cityName = input.value;
   input.value = "";
